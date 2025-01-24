@@ -9,7 +9,7 @@ export default defineConfig({
     imagemin({
       mozjpeg: { quality: 65 },
       pngquant: { quality: [0.65, 0.8], speed: 4 },
-      webp: { quality: 100 }
+      // webp: { quality: 100 }
     })
   ],
   build: {
