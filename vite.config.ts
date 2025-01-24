@@ -17,25 +17,32 @@ export default defineConfig({
     assetsInlineLimit: 4096,
     rollupOptions: {
       output: {
-        manualChunks(id) {
-          if (id.includes('node_modules')) {
-            if (id.includes('react/') || id.includes('react-dom'))
-              return 'react';
-            if (id.includes('react-router')) return 'router';
-            if (id.includes('framer-motion')) return 'motion';
-            if (
-              id.includes('react-hook-form') ||
-              id.includes('hookform') ||
-              id.includes('zod')
-            )
-              return 'form';
-            if (id.includes('embla-carousel')) return 'carousel';
-            if (id.includes('@radix-ui')) return 'radix';
-            if (id.includes('lucide-react') || id.includes('react-icons'))
-              return 'icons';
-            if (id.includes('@tsparticles')) return 'particles';
-            return 'vendor';
-          }
+        manualChunks: {
+          'react-core': [
+            'react',
+            'react-dom',
+            'react-router-dom',
+            '@radix-ui/react-slot',
+            '@radix-ui/react-context'
+          ],
+          form: ['react-hook-form', '@hookform/resolvers', 'zod'],
+          animation: ['framer-motion'],
+          ui: [
+            '@radix-ui/react-collapsible',
+            '@radix-ui/react-label',
+            '@radix-ui/react-navigation-menu'
+          ],
+          carousel: [
+            'embla-carousel-react',
+            'embla-carousel-autoplay',
+            'embla-carousel-fade'
+          ],
+          icons: ['lucide-react', 'react-icons'],
+          particles: [
+            '@tsparticles/engine',
+            '@tsparticles/react',
+            '@tsparticles/slim'
+          ]
         }
       }
     }
