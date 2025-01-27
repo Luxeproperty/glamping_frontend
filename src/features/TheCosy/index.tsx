@@ -11,18 +11,19 @@ import { Grid, GridItem } from '@/components/common/Grid';
 
 import 'react-photo-view/dist/react-photo-view.css';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
-import C1_1 from '../Home/components/ThreePods/CarouselImages/C1-1.jpg';
-import C1_2 from '../Home/components/ThreePods/CarouselImages/C1-2.jpg';
-import C1_3 from '../Home/components/ThreePods/CarouselImages/C1-3.jpg';
-import C1_4 from '../Home/components/ThreePods/CarouselImages/C1-4.jpg';
-import C1_5 from '../Home/components/ThreePods/CarouselImages/C1-5.jpg';
-import C1_6 from '../Home/components/ThreePods/CarouselImages/C1-6.jpg';
-import C1_7 from '../Home/components/ThreePods/CarouselImages/C1-7.jpg';
-import C1_8 from '../Home/components/ThreePods/CarouselImages/C1-8.jpg';
-import C1_9 from '../Home/components/ThreePods/CarouselImages/C1-9.jpg';
-import C1_10 from '../Home/components/ThreePods/CarouselImages/C1-10.jpg';
-import C1_11 from '../Home/components/ThreePods/CarouselImages/C1-11.jpg';
-import C1_12 from '../Home/components/ThreePods/CarouselImages/C1-12.jpg';
+
+import C2_1 from '../Home/components/ThreePods/CarouselImages/C2-1.jpg';
+import C2_2 from '../Home/components/ThreePods/CarouselImages/C2-2.jpg';
+import C2_3 from '../Home/components/ThreePods/CarouselImages/C2-3.jpg';
+import C2_4 from '../Home/components/ThreePods/CarouselImages/C2-4.jpg';
+import C2_5 from '../Home/components/ThreePods/CarouselImages/C2-5.jpg';
+import C2_6 from '../Home/components/ThreePods/CarouselImages/C2-6.jpg';
+import C2_7 from '../Home/components/ThreePods/CarouselImages/C2-7.jpg';
+import C2_8 from '../Home/components/ThreePods/CarouselImages/C2-8.jpg';
+import C2_9 from '../Home/components/ThreePods/CarouselImages/C2-9.jpg';
+import C2_10 from '../Home/components/ThreePods/CarouselImages/C2-10.jpg';
+import C2_11 from '../Home/components/ThreePods/CarouselImages/C2-11.jpg';
+import C2_12 from '../Home/components/ThreePods/CarouselImages/C2-12.jpg';
 import { Button } from '@/components/ui/button';
 
 export function TheCosy() {
@@ -31,19 +32,20 @@ export function TheCosy() {
   const { podInfo } = podData;
 
   const images = [
-    C1_1,
-    C1_2,
-    C1_3,
-    C1_4,
-    C1_5,
-    C1_6,
-    C1_7,
-    C1_8,
-    C1_9,
-    C1_10,
-    C1_11,
-    C1_12
+    C2_1,
+    C2_2,
+    C2_3,
+    C2_4,
+    C2_5,
+    C2_6,
+    C2_7,
+    C2_8,
+    C2_9,
+    C2_10,
+    C2_11,
+    C2_12
   ];
+
   return (
     <div className="w-full h-auto max-w-7xl mx-auto">
       <div className="mx-10 mt-10 max-w-7xl rounded overflow-hidden hidden lg:flex lg:justify-center lg:items-center">
