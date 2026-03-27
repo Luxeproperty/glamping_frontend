@@ -10,31 +10,6 @@ import {
   usePrevNextButtons
 } from '../Carousel/CarouselButtons';
 
-import C1_1 from './CarouselImages/CZ-1.jpg';
-import C1_2 from './CarouselImages/CZ-2.jpg';
-import C1_4 from './CarouselImages/CZ-4.jpg';
-import C1_5 from './CarouselImages/CZ-5.jpg';
-import C1_6 from './CarouselImages/CZ-6.jpg';
-import C1_7 from './CarouselImages/CZ-7.jpg';
-import C1_8 from './CarouselImages/CZ-8.jpg';
-import C1_9 from './CarouselImages/CZ-9.jpg';
-import C1_10 from './CarouselImages/CZ-10.jpg';
-import C1_11 from './CarouselImages/CZ-11.jpg';
-import C1_12 from './CarouselImages/CZ-12.jpg';
-import C1_13 from './CarouselImages/CZ-13.jpg';
-import C1_14 from './CarouselImages/CZ-14.jpg';
-import C1_15 from './CarouselImages/CZ-15.jpg';
-
-import C2_1 from './CarouselImages/YD1.jpg';
-import C2_2 from './CarouselImages/YD2.jpg';
-import C2_3 from './CarouselImages/YD3.jpg';
-import C2_4 from './CarouselImages/YD4.jpg';
-import C2_5 from './CarouselImages/YD5.jpg';
-import C2_6 from './CarouselImages/YD6.jpg';
-import C2_7 from './CarouselImages/YD7.jpg';
-import C2_8 from './CarouselImages/YD8.jpg';
-import C2_9 from './CarouselImages/YD9.jpg';
-
 import C3_1 from './CarouselImages/C3_1.jpg';
 import C3_2 from './CarouselImages/C3_2.jpg';
 import C3_3 from './CarouselImages/C3_3.jpg';
@@ -65,32 +40,6 @@ const ChillZone: React.FC<PropType> = (props) => {
   };
 
   const carouselsArray: CarouselArray[] = [
-    {
-      title: 'The Chill Zone',
-      description: `Step into our Chill Zone, the perfect place to bond, relax, and have a good time with the family. Whilst glamping in the picturesque English countryside is idyllic on dry days, the unpredictable English weather can sometimes force us indoors. Don't worry, we have you covered - enjoy bonding time with friends, family, or fellow glampers in our Chill Zone. We designed this dome to bring you closer to nature while offering a cosy shelter to brighten the rainy days. Come on in and have fun!`,
-      images: [
-        C1_1,
-        C1_2,
-        C1_4,
-        C1_5,
-        C1_6,
-        C1_7,
-        C1_8,
-        C1_9,
-        C1_10,
-        C1_11,
-        C1_12,
-        C1_13,
-        C1_14,
-        C1_15
-      ]
-    },
-    {
-      title: 'Yoga Dome',
-      description:
-        'Welcome to our Yoga Dome, where you can relax, recharge and rejuvenate. Take a deep breath, stretch your body, return to nature, and to yourself. Whether you prefer morning yoga, Pilates, or an invigorating sound bath, this purpose-built dome is the perfect space - complete with stunning views and all the amenities you need at your fingertips. Enjoy a moment to yourself, spend quality time with a loved one, or why not invite a new friend staying in your neighbouring pod?',
-      images: [C2_1, C2_2, C2_3, C2_4, C2_5, C2_6, C2_7, C2_8, C2_9]
-    },
     {
       title: 'BBQ Station',
       description: (
@@ -143,10 +92,7 @@ const ChillZone: React.FC<PropType> = (props) => {
             onPrevButtonClick,
             onNextButtonClick
           } = usePrevNextButtons(emblaApi);
-          const gridClasses =
-            colIndex === 2 // Assuming BBQ Zone is the third item (index 2)
-              ? 'lg:col-span-2 lg:row-start-2'
-              : '';
+          const gridClasses = '';
           return (
             <div key={colIndex} className={`carousel-item ${gridClasses}`}>
               {/* Carousel container */}
