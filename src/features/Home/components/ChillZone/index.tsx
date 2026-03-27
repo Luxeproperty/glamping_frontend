@@ -79,7 +79,7 @@ const ChillZone: React.FC<PropType> = (props) => {
 
   return (
     <div className="max-w-screen mx-auto mb-4 mt-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:grid-rows-2 gap-8">
+      <div>
         {carouselsArray.map((carousel, colIndex) => {
           const [emblaRef, emblaApi] = useEmblaCarousel(mergedOptions, [
             Fade()
@@ -92,9 +92,8 @@ const ChillZone: React.FC<PropType> = (props) => {
             onPrevButtonClick,
             onNextButtonClick
           } = usePrevNextButtons(emblaApi);
-          const gridClasses = '';
           return (
-            <div key={colIndex} className={`carousel-item ${gridClasses}`}>
+            <div key={colIndex} className="carousel-item">
               {/* Carousel container */}
               <div className="overflow-hidden relative" ref={emblaRef}>
                 <div className="flex">
