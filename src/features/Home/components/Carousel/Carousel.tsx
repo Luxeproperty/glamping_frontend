@@ -50,12 +50,6 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         "Purpose-built lodges in the heart of Northeast England's County Durham.  For those needing only the sound of silence and crackling of the fire. A place where only the birds and the trees are boisterous."
     },
     {
-      image: firstSlide,
-      title: TITLE,
-      description:
-        "Purpose-built lodges in the heart of Northeast England's County Durham.  For those needing only the sound of silence and crackling of the fire. A place where only the birds and the trees are boisterous."
-    },
-    {
       image: thirdSlide,
       title: TITLE,
       description:
