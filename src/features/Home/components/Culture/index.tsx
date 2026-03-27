@@ -22,7 +22,8 @@ const Culture = () => {
     {
       title: 'The 68 Café',
       description: `Organic. Local. Environmentally-conscious café for breakfast, lunch, dinner - and everything in between.`,
-      image: cafe
+      image: cafe,
+      href: 'https://the68cafe.co.uk/'
     }
   ];
   return (
@@ -44,10 +45,9 @@ const Culture = () => {
       <div className="px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {imagesArray.map((item, index) => {
-            return (
+            const card = (
               <div
-                key={index}
-                className="flex flex-col h-full justify-between" // Ensures content stays within
+                className="flex flex-col h-full justify-between"
               >
                 <img
                   className="w-full h-[20rem] lg:h-full object-cover rounded-2xl hover:scale-[101%] transition-all hover:cursor-pointer"
@@ -55,14 +55,20 @@ const Culture = () => {
                   alt={item.title}
                 />
                 <div className="flex flex-col justify-between mt-4 text-center">
-                  {' '}
-                  {/* Added padding to container */}
                   <h2 className="text-2xl font-bold">{item.title}</h2>
                   <p className="mt-3  text-base text-gray-600">
                     {item.description}
                   </p>
                 </div>
               </div>
+            );
+
+            return item.href ? (
+              <a key={index} href={item.href} target="_blank" rel="noopener noreferrer">
+                {card}
+              </a>
+            ) : (
+              <div key={index}>{card}</div>
             );
           })}
         </div>

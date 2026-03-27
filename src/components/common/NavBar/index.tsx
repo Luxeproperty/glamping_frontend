@@ -104,14 +104,14 @@ export function CountryGlampingNavBar() {
           </NavigationMenuItem>
 
           <NavigationMenuItem className="cursor-pointer">
-            <NavLink
-              to="/the-68-cafe"
-              className={({ isActive }) =>
-                `${navigationMenuTriggerStyle()} ${isActive ? 'text-slate-900' : 'text-black'}`
-              }
+            <a
+              href="https://the68cafe.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${navigationMenuTriggerStyle()} text-black`}
             >
               The 68 Café
-            </NavLink>
+            </a>
           </NavigationMenuItem>
 
           <NavigationMenuItem className="cursor-pointer">
@@ -253,12 +253,14 @@ export function CountryGlampingNavBar() {
               </NavigationMenuItem>
 
               <NavigationMenuItem className="cursor-pointer">
-                <NavLink
-                  to="/the-68-cafe"
+                <a
+                  href="https://the68cafe.co.uk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-lg text-gray-700 hover:text-gray-900"
                 >
                   The 68 Café
-                </NavLink>
+                </a>
               </NavigationMenuItem>
 
               <NavigationMenuItem className="cursor-pointer">
