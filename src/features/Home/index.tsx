@@ -8,7 +8,7 @@ import InstagramPictures from '@/components/common/InstagramPictures';
 
 const Home = () => {
   const OPTIONS: EmblaOptionsType = { loop: true, duration: 40 };
-  const SLIDE_COUNT = 5;
+  const SLIDE_COUNT = 4;
   const SLIDES = Array.from(Array(SLIDE_COUNT));
 
   return (

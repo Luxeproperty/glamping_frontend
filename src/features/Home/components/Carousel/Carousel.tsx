@@ -7,7 +7,6 @@ import { NextButton, PrevButton, usePrevNextButtons } from './CarouselButtons';
 import { DotButton, useDotButton } from './CarouselDots';
 import './css/embla.css';
 import firstSlide from './images/C1.jpg';
-import secondSlide from './images/C2.jpg';
 import thirdSlide from './images/C3.jpg';
 import fourthSlide from './images/C5.jpg';
 
@@ -46,12 +45,6 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   const slidesArray = [
     {
       image: firstSlide,
-      title: TITLE,
-      description:
-        "Purpose-built lodges in the heart of Northeast England's County Durham.  For those needing only the sound of silence and crackling of the fire. A place where only the birds and the trees are boisterous."
-    },
-    {
-      image: secondSlide,
       title: TITLE,
       description:
         "Purpose-built lodges in the heart of Northeast England's County Durham.  For those needing only the sound of silence and crackling of the fire. A place where only the birds and the trees are boisterous."
